@@ -1,0 +1,36 @@
+._milestones-card {
+  @apply tw-bg-primaryBg tw-px-16 tw-pb-16 tw-pt-10 tw-flex tw-justify-between;
+  ._date {
+    @apply tw-text-[24px]  tw-font-bold tw-text-third;
+  }
+  ._milestonies-box {
+    @apply tw-flex tw-flex-col tw-gap-4;
+    ._name {
+      @apply tw-text-[24px] tw-font-black tw-text-third tw-uppercase;
+    }
+    ._description {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      font-family: "Proxima Nova";
+      color: rgba(246, 245, 243, 0.81);
+    }
+  }
+}
+._company_name {
+  @apply tw-text-[22.875px] tw-text-third tw-font-medium;
+}
+.heading {
+  @apply tw-text-primary tw-font-black tw-text-[56px] tw-m-auto tw-text-center;
+  span {
+    font-family: "TT Runs Trial", sans-serif;
+    @apply tw-text-primary tw-font-black tw-text-[56px] tw-m-auto tw-text-center tw-opacity-20;
+  }
+  transition: opacity 0.5s, color 0.5s;
+  &.tw-opacity-35 {
+    opacity: 0.35;
+  }
+  &.tw-opacity-100 {
+    opacity: 1;
+  }
+}

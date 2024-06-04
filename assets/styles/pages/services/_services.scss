@@ -1,0 +1,9 @@
+._services_section {
+  @apply tw-h-[600px] tw-flex tw-flex-col tw-justify-center tw-items-center tw-bg-cover tw-bg-center tw-h-screen;
+  ._heading {
+    @apply tw-w-3/4 tw-text-center tw-overflow-hidden tw-relative;
+    span {
+      @apply tw-text-primary tw-font-black tw-text-[130px] tw-uppercase;
+    }
+  }
+}

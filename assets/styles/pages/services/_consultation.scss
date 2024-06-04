@@ -1,0 +1,9 @@
+._heading {
+  @apply tw-text-center tw-text-primary  tw-font-black tw-text-[56px];
+}
+.rotation-container {
+  @apply tw-relative tw-justify-center tw-flex tw-h-[782px] tw-mt-20 tw-w-full tw-overflow-hidden;
+  .rotation-video {
+    @apply tw-w-2/4 tw-items-center tw-translate-x-[50%] tw-flex  tw-absolute  tw-justify-center  tw-opacity-[50%];
+  }
+}

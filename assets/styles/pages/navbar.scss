@@ -1,0 +1,38 @@
+.header {
+  @apply tw-top-0 tw-py-5 tw-fixed tw-w-full tw-transition-all;
+  z-index: 9999999;
+  &.--scroll {
+    backdrop-filter: blur(10px);
+    background: #1b1b1b;
+    top: 0;
+  }
+}
+
+.header-container {
+  @apply tw-container;
+}
+
+.header_links {
+  a {
+    @apply tw-uppercase tw-font-normal;
+    font-size: var(--navlinks-size);
+    color: var(--primary);
+  }
+}
+
+.nuxt-loading-indicator {
+  background: var(--nuxt-indicator) !important;
+}
+
+.router-link-active,
+.exactActiveClass {
+  font-size: var(--navlinks-size) !important;
+}
+
+.router-link-active {
+  color: var(--primary) !important;
+}
+
+.router-link-exact-active {
+  color: var(--active-link) !important;
+}

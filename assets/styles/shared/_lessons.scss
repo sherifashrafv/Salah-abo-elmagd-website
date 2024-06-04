@@ -1,0 +1,21 @@
+.lessons-wrapper {
+  @apply tw-grid tw-grid-cols-2 tw-gap-20;
+  ._lesson-card {
+    @apply tw-flex tw-flex-col [&:not(:last-child)]:tw-border tw-border-b tw-border-[#000]  tw-items-center tw-gap-5;
+  }
+  .content {
+    @apply tw-flex tw-w-full tw-gap-5   tw-items-center;
+  }
+}
+.--content-wrapper {
+  @apply tw-flex tw-items-center tw-justify-between tw-w-full;
+  .lesson-heading {
+    @apply tw-uppercase tw-text-[21.731px] tw-text-primary tw-font-[var(--secondary-font)];
+  }
+  ._duration {
+    @apply tw-font-normal tw-text-[21.731px] tw-text-[var(--fifith-color)];
+  }
+}
+._description {
+  @apply tw-w-full tw-text-[var(--sixth-color)] tw-text-[21.731px];
+}

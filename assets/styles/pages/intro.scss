@@ -1,0 +1,37 @@
+.intro-wrapper {
+  @apply tw-mb-28;
+}
+.main-content-box {
+  @apply tw-flex tw-overflow-hidden tw-justify-between tw-relative;
+
+  ._animated_img {
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  .content-box {
+    @apply tw-relative tw-w-full;
+    & {
+      .content-box-text {
+        @apply tw-w-[1310px] tw-top-[28%] tw-h-full tw-absolute;
+      }
+    }
+  }
+  ._name {
+    @apply tw-text-[40px] tw-font-medium;
+  }
+  ._about {
+    @apply tw-w-[1302px];
+    span {
+      font-family: "TT Runs Trial", sans-serif;
+      @apply tw-font-bold tw-text-[10rem] tw-w-[1400px];
+    }
+  }
+}
+.dark-bg-gradient {
+  background: linear-gradient(180deg, rgba(27, 27, 27, 0) 0%, #1b1b1b 70.5%);
+}

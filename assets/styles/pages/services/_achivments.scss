@@ -1,0 +1,26 @@
+.achivments-wrapper {
+  @apply tw-grid tw-grid-cols-3 tw-gap-16 tw-my-44;
+  .achivments-box {
+    @apply tw-transition-all tw-overflow-hidden tw-duration-500 tw-bg-primaryBg tw-text-center tw-relative  tw-px-2 tw-py-28;
+    div,
+    & > div {
+      @apply tw-flex tw-transition-all tw-duration-700 tw-justify-center tw-text-primary tw-text-[74.5px] tw-font-semibold;
+    }
+    p {
+      @apply tw-transition-all tw-duration-700 tw-text-[27.03px] tw-mt-5 tw-text-primary tw-capitalize;
+    }
+    &:hover {
+      p,
+      div {
+        @apply tw-relative tw-z-10 tw-text-[#000];
+      }
+      &::after {
+        @apply tw-bottom-0 tw-h-full;
+      }
+    }
+    &::after {
+      content: "";
+      @apply tw-transition-all tw-duration-500 tw-bottom-full tw-absolute tw-left-0  tw-h-0  tw-w-full tw-bg-[var(--primary)] tw-z-[1];
+    }
+  }
+}

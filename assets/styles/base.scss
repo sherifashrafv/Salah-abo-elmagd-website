@@ -1,0 +1,176 @@
+* {
+  --sb-track-color: transparent;
+  --sb-thumb-color: var(--primary);
+  --sb-size: 6px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-en);
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-break: break-word;
+}
+
+*::-webkit-scrollbar {
+  width: var(--sb-size);
+  height: var(--sb-size);
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 5px;
+}
+body:hover::-webkit-scrollbar-thumb {
+  /*width: 5px;*/
+  background: var(--sb-thumb-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1 !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.7;
+}
+
+html[dir="rtl"],
+html[lang="ar"] * {
+  font-family: var(--font-ar);
+}
+
+html[dir="ltr"],
+html[lang="en"] * {
+  font-family: var(--font-en), "Proxima Nova Condensed", sans-serif,
+    "Proxima Nova Extra";
+}
+
+.font_tt_runs {
+  font-family: "TT Runs Trial", sans-serif;
+}
+
+.font_Poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  min-height: 100vh;
+  color: var(--base-color);
+  scroll-behavior: smooth;
+  transition: all 0.1s ease-in-out;
+}
+
+.dark body,
+body[data-theme="dark"] {
+  background: var(--bg);
+}
+
+.n-form-item {
+  .n-form-item-label {
+    .n-form-item-label__text {
+      color: var(--primary) !important;
+      text-transform: capitalize;
+      font-size: 15px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+  }
+
+  .n-input {
+    &.n-input--textarea {
+      height: 154px !important;
+      resize: none;
+    }
+
+    .n-input__input-el,
+    .n-input__textarea-el {
+      caret-color: var(--primary) !important;
+      height: 100% !important;
+      color: var(--primary) !important;
+    }
+
+    .n-input__placeholder {
+      color: rgba(223, 210, 192, 0.26);
+      text-transform: capitalize;
+    }
+  }
+}
+
+.n-input,
+.n-base-selection-label,
+.vue-tel-input {
+  background-color: var(--bg) !important;
+  height: 55px !important;
+  border-radius: 6px !important;
+  --n-border-hover: none !important;
+  --n-border-focus: none !important;
+  --n-border: none !important;
+  --n-color-focus: var(--bg) !important;
+  --n-box-shadow-focus: none !important;
+  font-family: "Proxima Nova" !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.n-base-selection {
+  --n-border: none !important;
+  --n-border-active: none !important;
+  --n-border-focus: none !important;
+  --n-border-hover: none !important;
+  --n-box-shadow-active: none !important;
+  --n-box-shadow-focus: none !important;
+  --n-box-shadow-hover: none !important;
+  --n-placeholder-color: rgba(223, 210, 192, 0.26) !important;
+  text-transform: capitalize;
+
+  .n-base-suffix {
+    .n-base-suffix__arrow {
+      color: rgba(223, 210, 192, 0.26) !important;
+    }
+  }
+}
+
+.title {
+  position: relative;
+  width: fit-content;
+  margin-inline: auto;
+
+  &:before {
+    content: "";
+    background-image: url(../svg/titleBg.svg);
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: -44px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+@media (max-width: 990px) {
+  .title {
+    &:before {
+      top: -64px;
+    }
+  }
+}
+
+.border-t {
+  border-top: 1px solid rgba(223, 210, 192, 0.09);
+}

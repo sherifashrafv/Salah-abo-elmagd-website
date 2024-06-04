@@ -1,0 +1,17 @@
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  border-radius: 7px !important;
+  width: 63px !important;
+  height: 10px !important;
+  background: var(--primary) !important;
+}
+:deep(.swiper) {
+  overflow-y: visible !important;
+}
+:deep(.swiper-pagination) {
+  bottom: -15% !important;
+}
+:deep(.swiper-pagination-clickable .swiper-pagination-bullet) {
+  width: 10px !important;
+  height: 10px !important;
+  background: var(--primary) !important;
+}

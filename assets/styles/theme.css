@@ -1,0 +1,84 @@
+:root {
+  --base-color:#ffffff;
+  --primary: #fff000;
+  --primary-rgb: 255, 240, 0;
+
+  --secondary: #07090d;
+  --secondary-rgb: 7, 9, 13;
+
+  --third: #ffffff;
+  --third-rgb: 255, 255, 255;
+
+  --accent: #000000;
+  --accent-rgb: 0, 0, 0;
+
+  --bg: #f0f0f0;
+  --bg-rgb: 240, 240, 240;
+
+  --info: #1491e6;
+  --info-rgb: 20, 145, 230;
+
+  --error: #9f2b2b;
+  --error-rgb: 159, 43, 43;
+
+  --warning: #faad14;
+  --warning-rgb: 250, 173, 20;
+
+  --success: #4e8d12;
+  --success-rgb: 78, 141, 18;
+
+  --font-ar: Swisser;
+  --font-en: 'Proxima Nova Condensed', sans-serif;;
+  --secondry-en-font:
+  --font-base-size: 1rem;
+
+  --font-sm-size: 0.8rem;
+  --font-xsm-size: 0.7rem;
+
+  --font-lg-size: 1.7rem;
+  --font-xlg-size: 2.1rem;
+}
+
+.dark {
+  --primary: #dfd2c0;
+  --primary-rgb: 255, 255, 255;
+
+  --third: #dfd2c0;
+
+  --active-link:#C79A7B;
+
+  --navlinks-size:18px;
+
+  --primary-bg:#DFD2C0;
+
+  --secondary-font: TT Runs Trial , sans-serif;
+
+  --secondary-rgb: 224, 224, 224;
+
+  --socail-bg:#c6997b;
+
+  --nuxt-indicator:#c6997b;
+  
+  --secondary: #2A2A2A;
+  --secondary-rgb: 27, 27, 27, 0.34;
+
+  --bg: #1b1b1b;  
+
+  --primary-bg-card: #242424;
+  
+  --secondary-bg-card: #84796C;
+
+  --third-bg-card:#C79A7B;
+
+  --fourth-bg:#3f3d3b;
+
+  --fifth-text-color:#EEEBDE;
+  
+  --card-border-bottom-color:#393939;
+
+  --third-rgb:0, 0, 0, 0.26;
+  
+  --base-raduis:12px;
+  --fifith-color: #C79A7B;
+  --sixth-color: #A79E91;
+}

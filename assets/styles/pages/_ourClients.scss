@@ -1,0 +1,101 @@
+.heading {
+  transition: opacity 0.5s, color 0.5s;
+  &.tw-opacity-35 {
+    opacity: 0.35;
+  }
+  &.tw-opacity-100 {
+    opacity: 1;
+  }
+}
+
+.swiper-bg {
+  @apply tw-relative tw-h-[580px] tw-flex tw-justify-end tw-flex-col;
+  overflow: hidden;
+  transition: background-position 0.5s ease;
+  .overlay {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+  }
+  .background {
+    @apply tw-absolute tw-w-full tw-h-full tw-top-0 tw-left-0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: transform 0.5s ease-in-out; // Add transition for smooth effect
+  }
+  &:hover {
+    .background {
+      transform: scale(1.5);
+    }
+    .box-content {
+      height: 100%;
+      .description {
+        height: 100%;
+      }
+    }
+  }
+}
+.swiper-bg:hover {
+  background-position: 50px 250px !important;
+}
+.box-content {
+  -moz-transition: height 1s ease;
+  -ms-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  -webkit-transition: height 1s ease;
+  transition: height 1s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background: rgba(223, 210, 192, 0.05);
+  height: 50%;
+  backdrop-filter: blur(10px);
+  z-index: 999999;
+
+  .description {
+    -moz-transition: height 0.8s ease;
+    -ms-transition: height 0.8s ease;
+    -o-transition: height 0.8s ease;
+    -webkit-transition: height 0.8s ease;
+    transition: height 0.8s ease;
+    height: 20%;
+    overflow: hidden;
+  }
+}
+.divider {
+  @apply tw-w-2/3  tw-h-[2px] tw-bg-primary tw-mt-5;
+}
+.details-box {
+  i {
+    transition: all 0.5s ease-in-out;
+  }
+  &:hover {
+    i {
+      @apply tw-rotate-45 tw-text-[25px];
+    }
+  }
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  border-radius: 7px !important;
+  width: 63px !important;
+  height: 10px !important;
+  background: var(--primary) !important;
+}
+:deep(.swiper) {
+  overflow-y: visible !important;
+}
+:deep(.swiper-pagination) {
+  bottom: -15% !important;
+}
+:deep(.swiper-pagination-clickable .swiper-pagination-bullet) {
+  width: 10px !important;
+  height: 10px !important;
+  background: var(--primary) !important;
+}

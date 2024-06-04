@@ -1,0 +1,26 @@
+.services-card {
+  @apply tw-flex tw-cursor-pointer tw-gap-5 tw-pb-14 tw-pt-5 tw-mb-5 tw-mt-3;
+  border-bottom: 1px solid var(--card-border-bottom-color);
+  -webkit-transition: background 0.35s, -webkit-transform 0.35s;
+  transition: background 0.35s, padding 0.35s, color 0.35s;
+  h5,
+  h3 {
+    transition: color 0.35s;
+    color: var(--fifth-text-color);
+  }
+  h5 {
+    font-family: "Satoshi", sans-serif;
+    @apply tw-text-[17.6px];
+  }
+  h3 {
+    @apply tw-mt-4 tw-text-[22px] tw-uppercase tw-font-bold;
+  }
+  &:hover {
+    background: var(--primary);
+    @apply tw-px-10;
+    h5,
+    h3 {
+      color: var(--secondary);
+    }
+  }
+}

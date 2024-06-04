@@ -1,0 +1,13 @@
+.divider {
+  @apply tw-w-2/3  tw-h-[2px] tw-bg-primary tw-mt-5;
+}
+.details-box {
+  i {
+    transition: all 0.5s ease-in-out;
+  }
+  &:hover {
+    i {
+      @apply tw-rotate-45 tw-text-[25px];
+    }
+  }
+}
